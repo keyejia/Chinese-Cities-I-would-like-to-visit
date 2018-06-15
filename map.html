@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neighborhood of Home</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  
+  <body>
+
+  	<div id="overlay">
+  		<button class="closebtn" onclick="close_overlay();">Close  X</button>
+	    <div class="input-group">
+	        <input placeholder="Location" type="text" data-bind="value: filter, valueUpdate: 'afterkeydown'">
+				<button class="filterbtn" type="button">
+						Filter
+				</button>
+	    </div>
+	    <ul data-bind="foreach: filteredcities"">
+	        <li><a href="#" data-bind="text: name" onclick="clickedcity(this.innerHTML);"></a></li>
+	    </ul>
+    </div>
+    <button class="hidebtn" onclick="open_overlay();"><i class="fa fa-bars" ></i></button>
+	<div id="map"></div>
+
+   	<script src="js/libs/knockout.js"></script>
+	<script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb-pmLEU0VC1b2Cbzi1w-nxEzY2oN8WEU&callback=initMap"
+    async defer></script>
+  </body>
+</html>
