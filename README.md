@@ -1,6 +1,6 @@
 # Chinese Cities I want to visit
 ## Description
-A single page application featuring a map of your neighborhood or a neighborhood you would like to visit. Added functionality to this map including highlighted locations, wikipedia extract and bing image about those locations and various ways to browse the content.
+A single page application featuring a map of China I would like to visit. Added functionality to this map including highlighted locations, wikipedia extract and bing image about those locations and various ways to browse the content.
 
 ## Frameworks, Libraries, and APIs  
 HTML5, CSS, Javascript, KnockoutJS, jQuery, Google Map API, Wikipedia API, Bing image search API.  
